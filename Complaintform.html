@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complaint Form</title>
+    <link rel="stylesheet" href="complaintform.css">
+    <link rel="icon" href="images/PhotoRoom-20231020_232757.png" style="border-radius: 50%;">
+</head>
+<body>
+    <img src="images/RIBBON.png.png">
+    <div class="container">
+        <form>
+            <h1 style="text-align: center;padding: 20px; margin-top: 30px; margin-bottom: 30px;">Complaint Registration Form</h1>
+            <table>
+                <tr>
+                    <td><label for="username">Full Name : </label></td>
+                    <td><input type="text" id="username" placeholder="Enter Full Name" required></td>
+                </tr>
+                <tr>
+                    <td><label>Gender/Sex :</label></td>
+                    <td>
+                        <select id="gender">
+                            <option class="male">Male</option>
+                            <option class="female">Female</option>
+                            <option class="other">Other</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label>Date of Birth : </label></td>
+                    <td><input type="date" id="dob" required></td>
+                </tr>
+
+                <tr>
+                    <td><label>Aadhar Number : </label></td>
+                    <td><input type="number"  id="user_aadhar_no" placeholder="Aadhar Number" required></td>
+                </tr>
+
+                <tr>
+                    <td><label>Phone Number : </label></td>
+                    <td><input type="number" id="user_phone_no" placeholder="Enter Phone Number"></td>
+                </tr>
+
+                <tr>
+                    <td><label for="email">Email : </label></td>
+                    <td><input type="email" id="email" name="email" placeholder="Enter Email Address"></td>
+                </tr>
+                <tr>
+                    <td><label for="address">Address : </label></td>
+                    <td><input style="height: 17vh;" type="text" name="address" id="address" placeholder="Enter address"></td>
+                </tr>
+
+                <tr>
+                    <td><label for="pincode">Pincode : </label></td>
+                    <td><input type="number" name="pincode" id="pincode" placeholder="Enter Pincode"></td>
+                </tr>
+
+                <tr>
+                    <td><label for="state">State : </label></td>
+                    <td><input type="text" name="state" id="state" placeholder="Enter State name"></td>
+                </tr>
+
+                <tr>
+                    <td><label for="domain">Domain : </label></td>
+                    <td>
+                        <table>
+                            <tr>
+                                <td><label for="option1">Option 1</label></td>
+                                <td><input type="radio" name="domain" id="option1" required></td>
+                            </tr>
+                            <tr>
+                                <td><label for="option2">Option 2</label></td>
+                                <td><input type="radio" name="domain" id="option2"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="option3">Option 3</label></td>
+                                <td><input type="radio" name="domain" id="option3"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="option4">Option 4</label></td>
+                                <td><input type="radio" name="domain" id="option4"></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="frauded_amount">Frauded Amount : </label></td>
+                    <td><input type="number" name="frauded_amount" id="frauded_amount" placeholder="Enter Amount Frauded in Rs" required></td>
+                </tr>
+
+                <tr>
+                    <td><label for="fir_number">FIR Number : </label></td>
+                    <td><input type="number" name="fir_number" id="fir_number" placeholder="Enter FIR Number ( Provided by Police )" required><br><p style="font-style: bold; color: red;">Provided by Police</p></td>
+                </tr>
+            </table>
+            <br>
+            <center><button class="button" type="submit">File Complaint</button></center>
+            <br>
+           
+        </form>
+    </div><br><br>
+
+    <div class="note">
+        <h3>NOTE : If you are undergone a fraud , immediately report to the nearest Police Station and file and FIR</h3>
+    </div>
+    <div class="footer">
+        
+    </div>
+
+    
+</body>
+</html>

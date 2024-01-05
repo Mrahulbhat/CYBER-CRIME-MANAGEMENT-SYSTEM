@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <title> Angular CRUD Application</title>
+    <link rel="icon" href="PhotoRoom-20231020_232757.png">
+</head>
+<style>
+   
+    .container{
+        margin-top: 50px;
+        border: 1px solid black;
+        height: fit-content;
+        border-radius: 10px;
+        width: fit-content;
+        padding: 30px;
+    }
+</style>
+<body ng-app="MyApp" ng-controller="UserController"><center>
+    <div class="container">
+        <h1>User Management</h1>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tr ng-repeat="user in users">
+                <td class="is">{{user.name}}</td>
+                <td class="is">{{user.email}}</td>
+                <td>
+                    <button ng-click="editUser(user)">Edit</button>
+                    <button ng-click="deleteUser(user)">Delete</button>
+                </td>
+            </tr>
+        </table>
+<hr>
+
+        <h2>Create User</h2>
+        <input type="text" ng-model="newUser.name" placeholder="Name">
+        <input type="email" ng-model="newUser.email" placeholder="Email">
+        <button ng-click="createUser()">create</button>
+<hr>
+        <h2>Edit User</h2>
+        <input type="text" ng-model="editedUser.name" placeholder="Name">
+        <input type="email" ng-model="editedUser.email" placeholder="Email">
+        <button ng-click="updateUser()">Update</button>
+    </div>
+</center>
+</body>
+<script>
+    var app=angular.module('MyApp',[]);
+    app.controller('UserController',function($scope)
+    {
+        $scope.users=[{name:'Chethu prasad',email:'chethu5122@gmail.com'},
+        {name:'Deeksha D',email:'deeksha25@gmail.com'}
+    ];
+    $scope.newUser={};
+
+    $scope.createUser=function()
+    {
+        $scope.users.push($scope.newUser);
+        $scope.newUser={};
+    };
+
+    $scope.editUser=function(user)
+    {
+        $scope.editedUser=user;
+    };
+
+    $scope.updateUser=function()
+    {
+        $scope.editedUser={};
+    };
+
+    $scope.deleteUser=function(user)
+    {
+        $scope.users.splice($scope.users.indexOf(user),1);
+    };
+
+    });
+</script>
+</html>
+

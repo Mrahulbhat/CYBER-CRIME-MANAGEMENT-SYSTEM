@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Admin login Portal</title>
+</head>
+<body>
+    <div class="pass" id="loginscreen">
+        <div class="password-container">
+            <form class="password-form" onsubmit="login(event)">
+                <h2 style="margin-bottom: 20px;"> Admin Login Dashboard</h2>
+                <input type="password" id="password" placeholder="Enter password" name="password" required>
+                <button type="submit">Submit</button>
+            </form>
+            <p style="color: rgb(16, 212, 16); margin-top: 10px;" id="message"></p>
+        </div>
+    </div>
+    <script>
+        function login(event) {
+            event.preventDefault();
+    
+            var passcode = document.getElementById("password").value;
+            var mypass = "admin";
+            var messageElement = document.getElementById("message");
+    
+            if (passcode === mypass) {
+                messageElement.textContent = "Sucess!!..Access Granted";
+                messageElement.className = "success-message";
+                setTimeout(function() {
+                window.location.href = "http://localhost/phpmyadmin/index.php?route=/database/structure&db=cyber+crime";
+                }, 500); // Redirect after 2 seconds (adjust as needed)
+            } else {
+                messageElement.textContent = "Incorrect Password";
+                messageElement.className = "error-message";
+            }
+        }
+    
+    </script>
+</body>
+</html>

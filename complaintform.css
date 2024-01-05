@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #b4b4b4;
+    margin: 0;
+}
+
+img{
+    width: 100%;
+    height: fit-content;
+}
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding-left: 90px;
+    padding-right: 90px;
+    border-radius: 19px;
+    background-color: #dbd8d8;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    text-align: left;
+}
+
+h1 {
+    color: #333;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #085513;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #1a8b0b;
+    color: #fff;
+    border: 1px solid white;
+    border-radius: 8px;
+    font-size: large;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #085513;
+    border-radius: 8px;
+    border: 3px solid #1a8b0b;
+
+
+}
+
+table {
+    width: 100%;
+    margin-bottom: 20px;
+}
+table input[type="radio"] {
+    margin-left: -300px;
+}
+td {
+    padding: 8px;
+}
+
+.footer{
+    height: 20vh;
+    width: 100%;
+    background-color: #051F26;
+    margin-top: 30px;
+}
+.note{
+    margin-left: 20%;
+    text-align: left;
+}
+/* Add more styles as needed */
