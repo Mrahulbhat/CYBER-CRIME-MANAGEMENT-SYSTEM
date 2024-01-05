@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/PhotoRoom-20231020_232757.png">
+    <title>Complaint Status</title>
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: 100;
+            box-sizing: border-box;
+        }
+
+        html{
+            scroll-behavior: smooth;
+        }
+
+        body{
+            color: black;
+            background-image: url(images/newbg.png);
+            background-size: cover;
+            font-size: 20px;
+        }
+        .container {
+            margin-top: 30px;
+            margin-left: 400px;
+            margin-right: 400px;
+            background-color: rgb(187, 183, 183);
+            border: 2px solid green;
+            border-radius: 10px;
+            padding: 3%;
+        }
+        input{
+            border:1px solid #051f26;
+            margin: 22px;
+            background-color: rgb(220, 223, 222);
+            font-size: 18px;
+
+        }
+
+        button{
+            font-size: 18px;
+            padding: 12px 30px;
+            margin: 20px;
+            background-color: rgb(42, 143, 42);
+            color: white;
+            border: 1px solid white;
+            border-radius: 7px;
+            transition: background 0s;
+        }
+        button:hover{
+            background-color: rgb(12, 70, 12);
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <center><h1 style="margin-top: 80px; color: white;">Check Status of your Case</h1></center>
+        <form class="container">
+            <table>
+                <tr>
+                    <td><label for="fir_no">FIR Number : </label></td>
+                    <td><input type="number" id="fir_no" placeholder="Enter FIR Number" required></td>  
+                </tr>
+                <tr>
+                    <td><label for="phone">Phone Number : </label></td>
+                    <td><input type="number" id="phone" placeholder="Enter Phone Number" required></td>  
+                </tr>
+            </table>
+            <center><button type="submit">Check Status</button></center>
+        </form>
+    </div>
+    
+</body>
+</html>
