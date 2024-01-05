@@ -266,11 +266,11 @@ button:hover {
     display: block;
     margin-left: 120px;
     width: fit-content;
-    margin-top: 60px;
+    margin-top: 40px;
     border: 5px solid #2078fc;
     margin-right: 120px;
     background-color: #051f26;
-    font-size: 18px;
+    font-size: 17px;
     padding: 28px;
     border-radius: 30px;
     word-spacing: 3.5px;
@@ -279,7 +279,7 @@ button:hover {
 }
 
 .dp-container:hover {
-    transform: scale(1.01); /* Increase the scale on hover */
+    transform: scale(1.05); /* Increase the scale on hover */
     background-color: #020a0c;
     border: 5px solid #ff004f;
 }
